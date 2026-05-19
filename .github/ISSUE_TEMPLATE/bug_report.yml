@@ -1,0 +1,73 @@
+name: Bug report
+description: Report something broken or unexpected.
+title: "[bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. Please fill out the sections below — incomplete reports are usually closed.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the unexpected behaviour.
+      placeholder: I ran `hl-archive fetch BTC --start ... --end ...` and instead of writing Parquet, ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: I expected the command to write hourly Parquet files under ./data/market=BTC/...
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: Exact command(s) or snippet that reproduces the bug. Include relevant inputs.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: traceback
+    attributes:
+      label: Traceback / logs
+      description: Full traceback if the command errored. Run with `--verbose` if available.
+      render: shell
+
+  - type: input
+    id: hl-archive-version
+    attributes:
+      label: hl-archive version
+      description: Output of `hl-archive version` (or `pip show hl-archive`).
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "3.11.9"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "macOS 14.5 / Ubuntu 24.04 / Windows 11"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Links, screenshots, related issues, suspected root cause.

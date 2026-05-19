@@ -45,9 +45,11 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
+    "pre-commit>=4.6.0",
     "pytest>=9.0.3",
     "pytest-cov>=7.1.0",
     "ruff>=0.15.13",
+    "ty>=0.0.37",
 ]
 
 [tool.ruff]
@@ -83,3 +85,9 @@ addopts = [
 ]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[tool.ty.src]
+include = ["src", "tests"]
+
+[tool.ty.environment]
+python-version = "3.11"

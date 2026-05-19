@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or discussion
+    url: https://github.com/tomazzi14/hl-archive/discussions
+    about: For open-ended questions, please open a Discussion instead of an issue.
+  - name: hyperbt (backtester)
+    url: https://github.com/tomazzi14/hyperbt
+    about: Backtesting / strategy issues belong in the hyperbt repo.
+  - name: hl-tui (dashboard)
+    url: https://github.com/tomazzi14/hl-tui
+    about: Terminal dashboard issues belong in the hl-tui repo.

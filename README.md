@@ -2,14 +2,14 @@
 
 > Turn Hyperliquid's raw S3 `lz4` dumps into clean Parquet datasets — queryable with Polars or DuckDB in one line.
 
-[![CI](https://github.com/CHANGE_ME/hl-archive/actions/workflows/ci.yml/badge.svg)](https://github.com/CHANGE_ME/hl-archive/actions/workflows/ci.yml)
+[![CI](https://github.com/tomazzi14/hl-archive/actions/workflows/ci.yml/badge.svg)](https://github.com/tomazzi14/hl-archive/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/hl-archive.svg)](https://pypi.org/project/hl-archive/)
 [![Python](https://img.shields.io/pypi/pyversions/hl-archive.svg)](https://pypi.org/project/hl-archive/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 `hl-archive` is the data layer that the Hyperliquid Python ecosystem is missing. It downloads Hyperliquid's public S3 dumps, decodes the `lz4`-framed JSON, and writes partitioned Parquet that loads in milliseconds — so you can stop writing the same ingestion script for every research notebook.
 
-It's the foundation under [hyperbt](https://github.com/CHANGE_ME/hyperbt) (funding-aware Python backtester), but it stands on its own.
+It's the foundation under [hyperbt](https://github.com/tomazzi14/hyperbt) (funding-aware Python backtester), but it stands on its own.
 
 ## Why
 
@@ -72,8 +72,8 @@ This is **v0.1 — alpha**. The CLI surface is stable enough to start integratin
 
 ## Related projects
 
-- [hyperbt](https://github.com/CHANGE_ME/hyperbt) — Python backtester for Hyperliquid, funding-aware, built on `hl-archive`.
-- [hl-tui](https://github.com/CHANGE_ME/hl-tui) — terminal dashboard for live Hyperliquid portfolios.
+- [hyperbt](https://github.com/tomazzi14/hyperbt) — Python backtester for Hyperliquid, funding-aware, built on `hl-archive`.
+- [hl-tui](https://github.com/tomazzi14/hl-tui) — terminal dashboard for live Hyperliquid portfolios.
 - [hyperliquid-python-sdk](https://github.com/hyperliquid-dex/hyperliquid-python-sdk) — official Python SDK (live API + WebSocket).
 
 ## Contributing
@@ -81,7 +81,7 @@ This is **v0.1 — alpha**. The CLI surface is stable enough to start integratin
 Issues and PRs welcome. Please open an issue before starting work on a non-trivial change so we can align on scope.
 
 ```bash
-git clone https://github.com/CHANGE_ME/hl-archive
+git clone https://github.com/tomazzi14/hl-archive
 cd hl-archive
 uv sync
 uv run pytest

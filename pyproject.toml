@@ -24,9 +24,9 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
-    "boto3>=1.43.10",
+    "boto3>=1.43.14",
     "lz4>=4.4.5",
-    "polars>=1.40.1",
+    "polars>=1.41.0",
     "pyarrow>=24.0.0",
     "typer>=0.25.1",
 ]
